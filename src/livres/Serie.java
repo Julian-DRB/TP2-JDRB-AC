@@ -28,4 +28,12 @@ public class Serie {
     public void removeOuvrage(Ouvrage ouvrage) {
         ouvrages.remove(ouvrage);
     }
+
+    @Override
+    public String toString() {
+        return "Serie{" +
+                "nom='" + nom + '\'' +
+                ", ouvrages=" + ouvrages.size() +
+                '}';
+    }
 }

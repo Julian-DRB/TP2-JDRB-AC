@@ -12,4 +12,8 @@ public class Serie {
         this.nom = nom;
         this.ouvrages = new ArrayList<>();
     }
+
+    public String getNom() {
+        return nom;
+    }
 }

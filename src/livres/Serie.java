@@ -16,7 +16,14 @@ public class Serie {
     public String getNom() {
         return nom;
     }
+
     public List<Ouvrage> getOuvrages() {
         return ouvrages;
     }
+
+    public void addOuvrage(Ouvrage ouvrage) {
+        ouvrages.add(ouvrage);
+    }
+
+    
 }

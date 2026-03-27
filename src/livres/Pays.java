@@ -3,9 +3,7 @@ public class Pays {
     private String code;
 
     public Pays(String nom, String code) {
-        if (!code.matches("[A-Z]{3}")) {
-            throw new IllegalArgumentException("Le code doit contenir exactement 3 lettres majuscules");
-        }
+        
         this.nom = nom;
         this.code = code;
     }
@@ -18,11 +16,14 @@ public class Pays {
         return code;
     }
 
-    public void setNom(){
+    public void setNom(String nom){
         this.nom = nom;
     }
 
-    public void setCode(){
-        this.code = code
+    public void setCode(String code){
+        if (!code.matches("[A-Z]{3}")) {
+            throw new IllegalArgumentException("Le code doit contenir exactement 3 lettres majuscules");
+        }
+        this.code = code;
     }
 }

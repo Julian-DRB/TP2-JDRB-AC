@@ -126,6 +126,33 @@ public class TestOuvrage {
         System.out.println(julian);
     }
 
+    private void testSerie() {
+
+        System.out.println("\n-----Test Serie-----------");
+
+        Pays canada = new Pays("Canada", "CAN");
+        Pays usa = new Pays("Etats-Unis", "USA");
+
+        Auteur a1 = new Auteur("Albertine", "Tremblay", canada);
+        Auteur a2 = new Auteur("John", "Smith", usa);
+
+        Ouvrage o1 = new Ouvrage("Livre A", a1);
+        Ouvrage o2 = new Ouvrage("Livre B", a2);
+
+        Serie serie = new Serie("Romans");
+
+        // Ajout d’ouvrages
+        serie.addOuvrage(o1);
+        serie.addOuvrage(o2);
+
+        System.out.println("Après ajout : " + serie.getOuvrages().size());
+
+        // Suppression d’un ouvrage
+        serie.removeOuvrage(o1);
+
+        System.out.println("Après suppression : " + serie.getOuvrages().size());
+    }
+
 
 }
 

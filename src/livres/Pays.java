@@ -24,7 +24,7 @@ public class Pays {
 
     public void setCode(String code){
         if (!code.matches("[A-Z]{3}")) {
-            throw new IllegalArgumentException("Le code doit contenir exactement 3 lettres majuscules");
+            System.out.println("Le code doit OBLIGATOIREMENT contenir 3 lettres MAJUSCULES");
         }
         this.code = code;
     }

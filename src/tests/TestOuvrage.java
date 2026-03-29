@@ -106,13 +106,16 @@ public class TestOuvrage {
 
         System.out.println("\n-----Tests de la classe Pays-----------");
 
+        // Pays valide
         Pays canada = new Pays("Canada", "CAN");
         System.out.println(canada);
 
+        // Pays invalide (code pas 3 lettres majuscules)
         Pays france = new Pays("France", "fr");
         System.out.println(france);
 
-        Auteur alexandru = new Auteur("Marie", "Dupont", "CAN");
+        // Lier un pays à un auteur
+        Auteur alexandru = new Auteur("Alexandru", "Ciobanu", "CAN");
         alexandru.setPays(canada);
 
         System.out.println(alexandru);

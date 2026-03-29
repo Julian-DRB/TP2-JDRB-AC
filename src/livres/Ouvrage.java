@@ -118,7 +118,7 @@ public abstract class Ouvrage {
         if (!(o instanceof Ouvrage)) return false;
         Ouvrage ouvrage = (Ouvrage) o;
         return Objects.equals(titre, ouvrage.titre) &&
-                Objects.equals(auteur, ouvrage.auteur)
+                Objects.equals(auteur, ouvrage.auteur);
     }
 
     @Override

@@ -102,6 +102,22 @@ public class TestOuvrage {
         System.out.println("Livres de Jacques: " + resultat);
     }
 
+    private void testPays(){
+
+        System.out.println("\n-----Tests de la classe Pays-----------");
+
+        Pays canada = new Pays("Canada", "CAN");
+        System.out.println(canada);
+
+        Pays france = new Pays("France", "fr");
+        System.out.println(france);
+
+        Auteur alexandru = new Auteur("Marie", "Dupont", "CAN");
+        alexandru.setPays(canada);
+
+        System.out.println(alexandru);
+    }
+
 
 }
 

@@ -102,10 +102,11 @@ public abstract class Ouvrage {
     @Override
     public String toString() {
 
-        String affichageDAte = date != null ? date.toString() : "Non Disponible";
+        String affichageDate = date != null ? date.toString() : "Non Disponible";
 
         return "[" + identificateur() + "] " + titre + " (" + auteur.getPrenom() + " "
-                + auteur.getNom() + ") - " + type + " - disponible le " + affichageDAte + " (" + nombreExemplaires + " ex.)";
+                + auteur.getNom() + ") - TYPE : " + type + " - disponible le "
+                + affichageDate + " (" + nombreExemplaires + " ex.)";
     }
 
     public void acheter(int nombre) {

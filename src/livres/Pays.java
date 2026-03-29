@@ -6,8 +6,8 @@ public class Pays {
 
     public Pays(String nom, String code) {
         
-        this.nom = nom;
-        this.code = code;
+        setNom;
+        setCode;
     }
 
     public String getNom() {

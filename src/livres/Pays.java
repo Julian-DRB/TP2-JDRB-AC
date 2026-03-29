@@ -1,3 +1,5 @@
+package livres;
+
 public class Pays {
     private String nom;
     private String code;

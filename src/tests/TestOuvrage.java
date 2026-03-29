@@ -123,6 +123,7 @@ public class TestOuvrage {
         julian.setPays(france)
 
         System.out.println(alexandru);
+        System.out.println(julian);
     }
 
 

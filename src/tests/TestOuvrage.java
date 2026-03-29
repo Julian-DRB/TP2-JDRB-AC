@@ -118,6 +118,10 @@ public class TestOuvrage {
         Auteur alexandru = new Auteur("Alexandru", "Ciobanu", "CAN");
         alexandru.setPays(canada);
 
+        // Lier un pays non valide à un auteur valide
+        Auteur julian = new Auteur("Julian", "Dupont", "FRA")
+        julian.setPays(france)
+
         System.out.println(alexandru);
     }
 

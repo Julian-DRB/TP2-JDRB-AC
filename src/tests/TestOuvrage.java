@@ -153,6 +153,19 @@ public class TestOuvrage {
         System.out.println("Après suppression : " + serie.getOuvrages().size());
     }
 
+    private void testOuvrageAudio(){
+
+        Ouvrage audio1 = new OuvrageAudio("Podcast Java", alexandru, 60, "numérique");
+        System.out.println(audio1);
+
+        audio1.setFormat("analogique");
+        audio1.setDureeMinutes(45);
+        System.out.println(audio1);
+
+        audio1.setDureeMinutes(-10);
+        System.out.println(audio1);
+    }
+
 
 }
 

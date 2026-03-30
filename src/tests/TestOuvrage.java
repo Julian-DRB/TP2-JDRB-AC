@@ -180,6 +180,17 @@ public class TestOuvrage {
         System.out.println(papier);
     }
 
+    private void testOuvrageVideo() {
+
+        System.out.println("\n-----Test OuvrageVideo-----------");
+
+        Pays canada = new Pays("Canada", "CAN");
+        Auteur auteur = new Auteur("Albertine", "Tremblay", canada);
+
+        Ouvrage video = new OuvrageVideo("Film Video", auteur, 120, 1500);
+        System.out.println(video);
+    }
+
 
 }
 

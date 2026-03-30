@@ -1,3 +1,8 @@
+/**
+ *
+ * @author Julian David Rodriguez
+ * @since H26
+ */
 package livres;
 
 import java.util.ArrayList;

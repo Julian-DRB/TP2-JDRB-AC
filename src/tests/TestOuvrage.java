@@ -3,8 +3,7 @@ package tests;
 import java.time.LocalDate;
 import java.util.List;
 
-import livres.Ouvrage;
-import livres.Auteur;
+import livres.*;
 
 /**
  * CoursPOO 1
@@ -167,6 +166,18 @@ public class TestOuvrage {
         // Test pour durée négative
         audio1.setDureeMinutes(-10);
         System.out.println(audio1);
+    }
+
+
+    private void testOuvragePapier() {
+
+        System.out.println("\n-----Test OuvragePapier-----------");
+
+        Pays canada = new Pays("Canada", "CAN");
+        Auteur auteur = new Auteur("Albertine", "Tremblay", canada);
+
+        Ouvrage papier = new OuvragePapier("Livre Papier", auteur, 300);
+        System.out.println(papier);
     }
 
 
